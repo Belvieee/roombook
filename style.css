@@ -1,13 +1,16 @@
 /* Couleurs et dimensions */
 :root {
-    --rb-primary: #2f5bea;
-    --rb-primary-dark: #1f3fb0;
-    --rb-bg: #f4f6fb;
-    --rb-text: #1f2937;
-    --rb-success: #15803d;
-    --rb-danger: #b91c1c;
+    --rb-primary: #1e40af;
+    --rb-primary-dark: #172554;
+    --rb-nav: #0f172a;
+    --rb-bg: #e9ecf1;
+    --rb-text: #111827;
+    --rb-success: #166534;
+    --rb-danger: #991b1b;
     --rb-radius: 12px;
 }
+
+a { color: var(--rb-primary); }
 
 body {
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
@@ -20,16 +23,16 @@ body {
 
 main { flex: 1; }
 
-.rb-navbar { background: var(--rb-primary); }
+.rb-navbar { background: var(--rb-nav); }
 .rb-navbar .nav-link, .rb-navbar .navbar-brand, .rb-user { color: #fff; text-decoration: none; }
 .rb-navbar .nav-link.active { font-weight: 700; border-bottom: 2px solid #fff; }
 .rb-navbar .navbar-toggler { background: #fff; }
 .rb-logo { font-weight: 700; font-size: 1.4rem; }
 
-.rb-footer { background: #111827; color: #d1d5db; padding: 16px 0; font-size: 0.9rem; }
+.rb-footer { background: #020617; color: #cbd5e1; padding: 16px 0; font-size: 0.9rem; }
 
 .rb-hero {
-    background: linear-gradient(135deg, var(--rb-primary), var(--rb-primary-dark));
+    background: linear-gradient(135deg, var(--rb-nav), var(--rb-primary));
     color: #fff;
     border-radius: var(--rb-radius);
     padding: 64px 32px;
@@ -39,7 +42,7 @@ main { flex: 1; }
 
 .rb-card {
     background: #fff;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #cbd5e1;
     border-radius: var(--rb-radius);
     padding: 20px;
     height: 100%;
@@ -49,6 +52,8 @@ main { flex: 1; }
 .rb-stat { font-size: 2rem; font-weight: 700; color: var(--rb-primary); }
 
 .btn-primary { background: var(--rb-primary); border-color: var(--rb-primary); }
+.btn-outline-primary { color: var(--rb-primary); border-color: var(--rb-primary); }
+.btn-outline-primary:hover { background: var(--rb-primary); border-color: var(--rb-primary); }
 .btn-primary:hover { background: var(--rb-primary-dark); border-color: var(--rb-primary-dark); }
 
 .rb-auth {
@@ -60,14 +65,14 @@ main { flex: 1; }
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
-/* Disponibilite : texte + icone + couleur */
-.rb-badge-ok { background: #dcfce7; color: var(--rb-success); }
-.rb-badge-ko { background: #fee2e2; color: var(--rb-danger); }
+/* Disponibilité : texte + icône + couleur */
+.rb-badge-ok { background: var(--rb-success); color: #fff; }
+.rb-badge-ko { background: var(--rb-danger); color: #fff; }
 
 .rb-slots { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }
 .rb-slot { border-radius: 8px; padding: 8px; text-align: center; font-size: 0.9rem; }
-.rb-slot.libre { background: #dcfce7; color: var(--rb-success); }
-.rb-slot.occupe { background: #fee2e2; color: var(--rb-danger); text-decoration: line-through; }
+.rb-slot.libre { background: var(--rb-success); color: #fff; }
+.rb-slot.occupe { background: var(--rb-danger); color: #fff; text-decoration: line-through; }
 
 .table { background: #fff; border-radius: var(--rb-radius); overflow: hidden; }
 

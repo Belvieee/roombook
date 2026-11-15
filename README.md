@@ -1,25 +1,36 @@
 # RoomBook – Front-End (PHP + Bootstrap)
 
-Application web de reservation de salles pour etudiants.
-Equipe : Ornis TALATALA, Brian AHANDA, Maimouna THIAM, Kenyone OBAME.
+Application web de réservation de salles pour étudiants.
+Équipe : Ornis TALATALA, Brian AHANDA, Maïmouna THIAM, Kenyone OBAME.
 
-## Lancer le projet
-1. Installer PHP (8+) : https://www.php.net/downloads
-2. Dans le dossier du projet : `php -S localhost:8000`
-3. Ouvrir http://localhost:8000
+## Lancer le projet (MAMP / XAMPP)
+1. Installer et démarrer MAMP (ou XAMPP) : le serveur Apache doit être actif.
+2. Copier le dossier `roombook` dans le dossier `htdocs` :
+   - MAMP : `C:\MAMP\htdocs\roombook`
+   - XAMPP : `C:\xampp\htdocs\roombook`
+3. Ouvrir dans le navigateur : `http://localhost/roombook/`
+   (avec MAMP, selon la configuration : `http://localhost:8888/roombook/`)
 
-## Comptes de demonstration
-| Role | Email | Mot de passe |
+Aucune base de données à installer : les données sont fictives et stockées dans des fichiers JSON (dossier `data/`).
+
+## Comptes de démonstration
+| Rôle | Email | Mot de passe |
 |---|---|---|
-| Etudiant | etudiant@roombook.fr | etudiant123 |
+| Étudiant | etudiant@roombook.fr | etudiant123 |
 | Gestionnaire | manager@roombook.fr | manager123 |
 | Administrateur | admin@roombook.fr | admin123 |
 
-## Structure
-- `index.php` accueil . `login.php` / `register.php` / `logout.php`
-- `dashboard.php` tableau de bord . `rooms.php` recherche . `room.php` detail + reservation
-- `reservations.php` mes reservations . `profile.php` profil
-- `manage_rooms.php`, `manage_reservations.php` (gestionnaire/admin)
-- `admin_users.php`, `admin_settings.php` (admin)
-- `Db.php`, `User.php`, `Reservation.php` : classes (lecture/ecriture de `data/*.json`)
-- `data/` : donnees fictives (JSON) . `style.css` . `script.js`
+## Structure du projet
+- `index.php` : accueil
+- `login.php`, `register.php`, `logout.php` : authentification
+- `dashboard.php` : tableau de bord
+- `rooms.php` : recherche des salles · `room.php` : détail d'une salle et réservation
+- `reservations.php` : mes réservations · `profile.php` : profil
+- `manage_rooms.php`, `manage_reservations.php` : gestion (gestionnaire / admin)
+- `admin_users.php`, `admin_settings.php` : administration (admin)
+- `Db.php`, `User.php`, `Reservation.php` : classes PHP (lecture et écriture des fichiers JSON)
+- `data/` : données fictives (JSON)
+- `style.css`, `script.js` : style et comportements
+
+## Technologies
+PHP, HTML, CSS, JavaScript, Bootstrap 5.
