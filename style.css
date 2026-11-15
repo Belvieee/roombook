@@ -1,0 +1,83 @@
+/* Couleurs et dimensions */
+:root {
+    --rb-primary: #2f5bea;
+    --rb-primary-dark: #1f3fb0;
+    --rb-bg: #f4f6fb;
+    --rb-text: #1f2937;
+    --rb-success: #15803d;
+    --rb-danger: #b91c1c;
+    --rb-radius: 12px;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--rb-bg);
+    color: var(--rb-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1; }
+
+.rb-navbar { background: var(--rb-primary); }
+.rb-navbar .nav-link, .rb-navbar .navbar-brand, .rb-user { color: #fff; text-decoration: none; }
+.rb-navbar .nav-link.active { font-weight: 700; border-bottom: 2px solid #fff; }
+.rb-navbar .navbar-toggler { background: #fff; }
+.rb-logo { font-weight: 700; font-size: 1.4rem; }
+
+.rb-footer { background: #111827; color: #d1d5db; padding: 16px 0; font-size: 0.9rem; }
+
+.rb-hero {
+    background: linear-gradient(135deg, var(--rb-primary), var(--rb-primary-dark));
+    color: #fff;
+    border-radius: var(--rb-radius);
+    padding: 64px 32px;
+    text-align: center;
+}
+.rb-hero h1 { font-weight: 700; font-size: 2.6rem; }
+
+.rb-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: var(--rb-radius);
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.rb-stat { font-size: 2rem; font-weight: 700; color: var(--rb-primary); }
+
+.btn-primary { background: var(--rb-primary); border-color: var(--rb-primary); }
+.btn-primary:hover { background: var(--rb-primary-dark); border-color: var(--rb-primary-dark); }
+
+.rb-auth {
+    max-width: 440px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: var(--rb-radius);
+    padding: 32px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Disponibilite : texte + icone + couleur */
+.rb-badge-ok { background: #dcfce7; color: var(--rb-success); }
+.rb-badge-ko { background: #fee2e2; color: var(--rb-danger); }
+
+.rb-slots { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }
+.rb-slot { border-radius: 8px; padding: 8px; text-align: center; font-size: 0.9rem; }
+.rb-slot.libre { background: #dcfce7; color: var(--rb-success); }
+.rb-slot.occupe { background: #fee2e2; color: var(--rb-danger); text-decoration: line-through; }
+
+.table { background: #fff; border-radius: var(--rb-radius); overflow: hidden; }
+
+/* Tablette */
+@media (max-width: 992px) {
+    .rb-hero h1 { font-size: 2rem; }
+}
+/* Mobile */
+@media (max-width: 576px) {
+    .rb-hero { padding: 40px 16px; }
+    .rb-hero h1 { font-size: 1.6rem; }
+    .rb-auth { padding: 20px; margin: 12px auto; }
+}

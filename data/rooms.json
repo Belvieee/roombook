@@ -1,0 +1,71 @@
+[
+  {
+    "idSalle": 1,
+    "nom": "Salle A101",
+    "capacite": 30,
+    "localisation": "Batiment A - 1er etage",
+    "disponible": true,
+    "equipements": [
+      "Projecteur",
+      "Tableau blanc",
+      "Wi-Fi"
+    ]
+  },
+  {
+    "idSalle": 2,
+    "nom": "Salle A102",
+    "capacite": 12,
+    "localisation": "Batiment A - 1er etage",
+    "disponible": true,
+    "equipements": [
+      "Ecran TV",
+      "Wi-Fi"
+    ]
+  },
+  {
+    "idSalle": 3,
+    "nom": "Salle B201",
+    "capacite": 60,
+    "localisation": "Batiment B - 2e etage",
+    "disponible": true,
+    "equipements": [
+      "Projecteur",
+      "Micro",
+      "Wi-Fi",
+      "Prises electriques"
+    ]
+  },
+  {
+    "idSalle": 4,
+    "nom": "Salle B202",
+    "capacite": 8,
+    "localisation": "Batiment B - 2e etage",
+    "disponible": true,
+    "equipements": [
+      "Tableau blanc",
+      "Wi-Fi"
+    ]
+  },
+  {
+    "idSalle": 5,
+    "nom": "Labo Info C01",
+    "capacite": 24,
+    "localisation": "Batiment C - Rez-de-chaussee",
+    "disponible": true,
+    "equipements": [
+      "Ordinateurs",
+      "Projecteur",
+      "Wi-Fi"
+    ]
+  },
+  {
+    "idSalle": 6,
+    "nom": "Salle D10",
+    "capacite": 20,
+    "localisation": "Batiment D - 1er etage",
+    "disponible": false,
+    "equipements": [
+      "Tableau blanc"
+    ]
+  }
+]

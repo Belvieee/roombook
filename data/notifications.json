@@ -1,0 +1,37 @@
+[
+    {
+        "idNotif": 1,
+        "idUser": 3,
+        "message": "Votre reservation de la salle A101 est confirmee.",
+        "dateEnvoi": "2026-11-15",
+        "lu": false
+    },
+    {
+        "idNotif": 2,
+        "idUser": 3,
+        "message": "Rappel : reservation de la salle B201 dans 3 jours.",
+        "dateEnvoi": "2026-11-15",
+        "lu": false
+    },
+    {
+        "idNotif": 3,
+        "idUser": 5,
+        "message": "Votre reservation de la salle Salle A101 est confirmee.",
+        "dateEnvoi": "2026-11-15",
+        "lu": false
+    },
+    {
+        "idNotif": 4,
+        "idUser": 5,
+        "message": "Votre reservation de la salle Salle A102 est confirmee.",
+        "dateEnvoi": "2026-11-15",
+        "lu": false
+    },
+    {
+        "idNotif": 5,
+        "idUser": 2,
+        "message": "Votre reservation de la salle Salle B202 est confirmee.",
+        "dateEnvoi": "2026-11-15",
+        "lu": false
+    }
+]

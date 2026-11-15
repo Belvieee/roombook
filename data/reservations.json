@@ -1,0 +1,65 @@
+[
+    {
+        "idReservation": 1,
+        "idUser": 3,
+        "idSalle": 1,
+        "date": "2026-11-16",
+        "heureDebut": "10:00",
+        "heureFin": "12:00",
+        "statut": "confirmee"
+    },
+    {
+        "idReservation": 2,
+        "idUser": 4,
+        "idSalle": 2,
+        "date": "2026-11-16",
+        "heureDebut": "14:00",
+        "heureFin": "15:00",
+        "statut": "confirmee"
+    },
+    {
+        "idReservation": 3,
+        "idUser": 3,
+        "idSalle": 3,
+        "date": "2026-11-18",
+        "heureDebut": "09:00",
+        "heureFin": "11:00",
+        "statut": "confirmee"
+    },
+    {
+        "idReservation": 4,
+        "idUser": 3,
+        "idSalle": 4,
+        "date": "2026-11-13",
+        "heureDebut": "16:00",
+        "heureFin": "17:00",
+        "statut": "confirmee"
+    },
+    {
+        "idReservation": 5,
+        "idUser": 5,
+        "idSalle": 1,
+        "date": "2026-11-15",
+        "heureDebut": "18:00",
+        "heureFin": "19:00",
+        "statut": "confirmee"
+    },
+    {
+        "idReservation": 6,
+        "idUser": 5,
+        "idSalle": 2,
+        "date": "2026-11-15",
+        "heureDebut": "20:38",
+        "heureFin": "21:33",
+        "statut": "confirmee"
+    },
+    {
+        "idReservation": 7,
+        "idUser": 2,
+        "idSalle": 4,
+        "date": "2026-11-15",
+        "heureDebut": "20:36",
+        "heureFin": "21:36",
+        "statut": "confirmee"
+    }
+]
